@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins",Arial,sans-serif;
+    background-color: midnightblue;
+    background-image: url('images/sunny-waters.jpg');
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+
+#container {
+    padding: 50px;
+}
+
+#header {   
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#location {
+    line-height: 20px;
+}
+
+#day {
+    line-height: 60px;
+}
+
+#date-time {
+    color: rgb(244, 239, 239);
+    height: 70px;
+}
+
+#inputs {
+    display: inline-block;
+    
+}
+
+.humidity {
+    display: inline-block;
+}
+
+#locationInput {
+    border: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    width: 250px;
+    background-color: rgba(84, 127, 247, 0.5);
+    color: #FFF;
+}
+
+#searchButton {
+    border: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(234, 240, 255);
+    color:rgb(58, 66, 83);
+}
+
+
+.imperial {
+    margin-left: 10px;
+}
+
+#date-time p {
+    display: inline-block;
+}
+
+#date-time h1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgba(88, 92, 132, 0.5);
+    /*background-color: rgba(176, 182, 243, 0.2);*/
+    text-align: center;
+    color: rgb(244, 239, 239);
+    border-radius: 25px;
+}
+
+#forcast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#temperature {
+    font-size: 50px;
+}
+
+#temp-container{
+    margin: 0;
+}
+
+#stats {
+    margin: auto;
+    padding: auto 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 0px;
+}
+
+#stats div {
+    display: flex;
+}
+
+#stats div img {
+    margin-top: 20px;
+}
+
+.icon {
+    margin-top: 35px;
+}
+
+.mini-icon {
+    width: 25px;
+    display: inline-block;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.icon {
+    width: 100px;
+}
