@@ -32,8 +32,18 @@ const url1 = `https://api.openweathermap.org/data/2.5/weather?`;
 const locationURL2 = `http://api.openweathermap.org/geo/1.0/reverse?`;
 
 dayOfWeek.textContent = `${curDay} ${curDate}, ${curTime}`;
-//d.textContent = curDate;
-//time.textContent = curTime;
+
+window.onload = function() {
+    console.log(hours);
+    if(hours >= 18) {
+        document.body.style.backgroundImage = "url('images/night-lake.jpg')";
+        document.getElementById('icon').src = "icons/moon.svg";
+    } else if(hours >= 6 && hours < 18) {
+        document.body.style.backgroundImage = "url('images/sunny-waters.jpg')";
+        document.getElementById('icon').src = "icons/sunny.svg";
+    }
+  console.log("Script executed on page load!");
+};
 
 function getLocationAndFetch(url) {
     if (navigator.geolocation) {
@@ -76,6 +86,10 @@ function getLocationAndFetch(url) {
       } else { 
         console.log("Geolocation is not supported by this browser.");
     }
+}
+
+function searchCity(city) {
+    getLocationAndFetch
 }
 
 getLocationAndFetch(url1);
