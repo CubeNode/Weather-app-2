@@ -36,10 +36,10 @@ dayOfWeek.textContent = `${curDay} ${curDate}, ${curTime}`;
 window.onload = function() {
     console.log(hours);
     if(hours >= 18) {
-        document.body.style.backgroundImage = "url('images/night-lake.jpg')";
+        //document.body.style.backgroundImage = "url('images/night-lake.jpg')";
         document.getElementById('icon').src = "icons/moon.svg";
     } else if(hours >= 6 && hours < 18) {
-        document.body.style.backgroundImage = "url('images/sunny-waters.jpg')";
+        //document.body.style.backgroundImage = "url('images/sunny-waters.jpg')";
         document.getElementById('icon').src = "icons/sunny.svg";
     }
   console.log("Script executed on page load!");
@@ -61,10 +61,10 @@ function getLocationAndFetch(url) {
                     let sunrise_hour = sunrise.getHours();
 
                     if(hours > sunset_hour) {
-                        document.body.style.backgroundImage = "url('images/night-lake.jpg')";
+                        //document.body.style.backgroundImage = "url('images/night-lake.jpg')";
                         document.getElementById('icon').src = "icons/moon.svg";
                     } else if(hours > sunrise_hour) {
-                        document.body.style.backgroundImage = "url('images/sunny-waters.jpg')";
+                        //document.body.style.backgroundImage = "url('images/sunny-waters.jpg')";
                         document.getElementById('icon').src = "icons/sunny.svg";
                     }
 

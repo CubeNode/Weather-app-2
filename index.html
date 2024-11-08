@@ -11,35 +11,40 @@
     </head>
     <body>
         <div id="container">
-            
-            <div id="header">
-                <div id="date-time">
-                    <h1 class="bold" id="location">Washington, DC</h1>
-                    <p class="light" id="day" style="margin: 0;"></p>
+            <div id="top" class="full">
+                <div id="header">
+                    <div id="date-time">
+                        <h1 class="bold" id="location">Washington, DC</h1>
+                        <p class="light" id="day" style="margin: 0;"></p>
+                    </div>
+                    <div id="inputs">
+                        <input type="text" placeholder="Search city" id="locationInput">
+                        <button id="searchButton">Search</button>
+                    </div>
                 </div>
-                <div id="inputs">
-                    <input type="text" placeholder="Search city" id="locationInput">
-                    <button id="searchButton">Search</button>
-                </div>
-            </div>
-            
-            <div id="info">
-                
                 <div id="temp-container">
                     <img src="icons/sunny.svg" alt="Sunny SVG" class="icon" id="icon"/>
                     <h2 class="bold" id="temperature">??°F</h2>
-                </div>
-                <div id="forcast">
                     <h3 id="description">Feels like ??°F, clear</h3>
-                    <div id="stats">
-                        <div><span><img src="icons/water_drop.svg" alt="water drop SVG" class="mini-icon"></span><h3 class="light" id="humidity">Humidity: ??%</h3></div>
-                        <div><span><img src="icons/thermostat.svg" alt="thermostat SVG" class="mini-icon"></span><h3 class="light" id="min-max">Min-Max: ??°F/??°F</h3></div>
-                        <div><span><img src="icons/air.svg" alt="air SVG" class="mini-icon"></span><h3 class="light" id="wind">Wind: ?.?? mph</h3></div>
-                        <div><span><img src="icons/compare_arrows.svg" alt="compare arrows SVG" class="mini-icon"></span><h3 class="light" id="pressure">Pressure: ????</h3></div>
+                </div>
+            </div>
+
+            <div id="bottom" class="full">
+                <div id="info">
+                
+                   
+                    <div id="forcast">
+                        
+                        <div id="stats">
+                            <div><span><img src="icons/water_drop.svg" alt="water drop SVG" class="mini-icon"></span><h3 class="light" id="humidity">Humidity: ??%</h3></div>
+                            <div><span><img src="icons/thermostat.svg" alt="thermostat SVG" class="mini-icon"></span><h3 class="light" id="min-max">Min-Max: ??°F/??°F</h3></div>
+                            <div><span><img src="icons/air.svg" alt="air SVG" class="mini-icon"></span><h3 class="light" id="wind">Wind: ?.?? mph</h3></div>
+                            <div><span><img src="icons/compare_arrows.svg" alt="compare arrows SVG" class="mini-icon"></span><h3 class="light" id="pressure">Pressure: ????</h3></div>
+                        </div>
+                        
                     </div>
                     
                 </div>
-                
             </div>
             
         </div>
