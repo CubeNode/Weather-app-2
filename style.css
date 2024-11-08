@@ -5,6 +5,9 @@ body {
     height: 100vh;
     font-family: "Poppins",Arial,sans-serif;
     background-color: rgb(76, 143, 238);
+    background-image: linear-gradient(rgb(93, 56, 195), rgb(69, 26, 170));
+   /*background-image: linear-gradient(rgb(52, 136, 252), rgb(41, 64, 236));*/
+    /*background-image: linear-gradient(rgb(20, 98, 222), rgb(22, 55, 219));*/
     object-fit: fill;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -13,6 +16,15 @@ body {
 
 #container {
     padding: 2em;
+}
+
+.full {
+    width: 100%;
+    height: 50%;
+}
+
+#bottom {
+    
 }
 
 #header {   
@@ -49,7 +61,7 @@ body {
     margin: 0;
     padding: 10px;
     width: 250px;
-    background-color: rgba(84, 127, 247, 0.5);
+    background-color: rgba(0, 20, 75, 0.5);
     color: #FFF;
 }
 
@@ -83,7 +95,6 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 55%;
-    min-width: 400px;
     margin: 0 auto;
     padding: 0;
     background-color: rgba(88, 92, 132, 0.5);
@@ -106,6 +117,8 @@ body {
 
 #temp-container{
     margin: 0;
+    color: rgb(244, 239, 239);
+    text-align: center;
 }
 
 #stats {
