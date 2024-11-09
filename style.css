@@ -130,6 +130,13 @@ body {
     grid-gap: 0px;
 }
 
+.label {
+    /*display: none;*/
+    margin: 20px 5px 0 0;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
 #stats div {
     display: flex;
 }
@@ -181,10 +188,27 @@ body {
 
     #info {
         margin: 0 auto;
+        background-color: rgba(88, 92, 132, 0);
     }
 
     #stats {
-        display: block;
+        width: 100%;
+    }
+
+    #stats div {
+        flex-direction: column;
+        background-color: rgba(88, 92, 132, 0.5);
+        width: 90%;
+        margin: 5px 5px;
+        /*border-radius: 15px;*/
+    }
+
+    .label {
+        display: none;
+    }
+
+    .mini-icon {
+        width: 40px;
     }
 
 }
