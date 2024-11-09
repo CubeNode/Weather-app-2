@@ -71,10 +71,10 @@ function getLocationAndFetch(url) {
                     console.log(hours + ':' + sunset_hour);
                     userLocation.textContent = `${data.name}, ${data.sys.country}`;
                     temp.textContent = `${Math.floor(data.main.temp)}°F`;
-                    humidity.textContent = `Humidity: ${data.main.humidity}%`;
-                    minMax.textContent = `Min-Max: ${Math.floor(data.main.temp_min)}°F/${Math.floor(data.main.temp_max)}°F`;
-                    wind.textContent = `Wind: ${data.wind.speed} mph`;
-                    pressure.textContent = `Pressure: ${data.main.pressure}`;
+                    humidity.textContent = `${data.main.humidity}%`;
+                    minMax.textContent = `${Math.floor(data.main.temp_min)}°F/${Math.floor(data.main.temp_max)}°F`;
+                    wind.textContent = `${data.wind.speed} mph`;
+                    pressure.textContent = `${data.main.pressure}`;
                     description.textContent = `Feels like ${Math.floor(data.main.feels_like)}°F, ${data.weather[0].description}`;
                     console.log(data);
                 })
