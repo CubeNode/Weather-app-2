@@ -4,10 +4,11 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: "Poppins",Arial,sans-serif;
-    background-color: rgb(76, 143, 238);
+    background-color: rgb(69, 26, 170);
     background-image: linear-gradient(rgb(93, 56, 195), rgb(69, 26, 170));
-   /*background-image: linear-gradient(rgb(52, 136, 252), rgb(41, 64, 236));*/
-    /*background-image: linear-gradient(rgb(20, 98, 222), rgb(22, 55, 219));*/
+   /*background-image: linear-gradient(rgb(52, 136, 252), rgb(41, 64, 236));
+    background-color: rgb(22, 55, 219);
+    background-image: linear-gradient(rgb(20, 98, 222), rgb(22, 55, 219));*/
     object-fit: fill;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -97,7 +98,7 @@ body {
     width: 55%;
     margin: 0 auto;
     padding: 0;
-    background-color: rgba(88, 92, 132, 0.5);
+    /*background-color: rgba(88, 92, 132, 0.5);*/
     /*background-color: rgba(176, 182, 243, 0.2);*/
     text-align: center;
     color: rgb(244, 239, 239);
@@ -143,6 +144,19 @@ body {
 
 #stats div img {
     margin-top: 20px;
+}
+
+#five-day-forcast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.five-day-min {
+    color:rgb(129, 129, 129);
+}
+
+.day {
+    margin: 10px;
 }
 
 .icon {
